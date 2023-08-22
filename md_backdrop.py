@@ -1,5 +1,3 @@
-# PythonScript
-
 
 #md_backdrop_v22.08.2023.0.1
 
@@ -12,7 +10,7 @@ def md_backdrop():
     
     p = nuke.Panel('MD Backdrop')
     
-    p.addEnumerationPulldown('my choices', 'User Plate DN CC Key Transfrom 3D')
+    p.addEnumerationPulldown('my choices', 'User Plate DN CC Key Despill Transfrom 3D')
     
     p.addSingleLineInput('Custom', '')
     
@@ -56,6 +54,14 @@ def md_backdrop():
          bd_node['note_font'].setValue('bold')
          bd_node['note_font_size'].setValue(50)
          bd_node['tile_color'].setValue(hex_color_to_rgb(.15,.25,.15))
+
+    # For Despill
+    elif p.value('my choices') == 'Despill':
+         bd_node = nukescripts.autoBackdrop()
+         bd_node['label'].setValue('Despill')
+         bd_node['note_font'].setValue('bold')
+         bd_node['note_font_size'].setValue(50)
+         bd_node['tile_color'].setValue(hex_color_to_rgb(.3,.1,0))
     
     
     
@@ -74,6 +80,13 @@ def md_backdrop():
          bd_node['note_font'].setValue('bold')
          bd_node['note_font_size'].setValue(50)
          bd_node['tile_color'].setValue(hex_color_to_rgb(.05,0.01,.03))
+         
     
+
+
+
+
+
+
     else:
         pass
