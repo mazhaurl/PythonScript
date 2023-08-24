@@ -437,7 +437,7 @@ class md_backdrop(QWidget, Ui_Form):
 
 
        bd_node = autoBackdropmd()
-       bd_node['label'].setValue('roto')
+       bd_node['label'].setValue('Projection')
        bd_node['note_font'].setValue('bold')
        bd_node['note_font_size'].setValue(50)
 
