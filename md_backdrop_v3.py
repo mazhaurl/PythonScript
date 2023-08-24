@@ -1,7 +1,6 @@
-#UIChanged and added more fuctionality v1.2.0
+#Md Mazharul Islam
+#www.shuvofx.com
 
-
-# -*- coding: utf-8 -*-
 
 ################################################################################
 ## Form generated from reading UI file 'mdBackdrop_v2mGnvRH.ui'
